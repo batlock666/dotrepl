@@ -11,4 +11,5 @@ load_plugin qw(
     CompletionDriver::Methods
     DumpHistory
     History
+    ReadLineHistory
 );
