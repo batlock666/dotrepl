@@ -9,4 +9,5 @@ load_plugin qw(
     CompletionDriver::Keywords
     CompletionDriver::LexEnv
     CompletionDriver::Methods
+    History
 );
