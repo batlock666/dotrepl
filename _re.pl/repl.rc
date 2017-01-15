@@ -10,6 +10,7 @@ load_plugin qw(
     CompletionDriver::LexEnv
     CompletionDriver::Methods
     DumpHistory
+    FancyPrompt
     History
     LexEnv
     ReadLineHistory
