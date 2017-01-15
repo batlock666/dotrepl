@@ -3,4 +3,10 @@ use warnings;
 
 load_plugin qw(
     Colors
+    Completion
+    CompletionDriver::Globals
+    CompletionDriver::INC
+    CompletionDriver::Keywords
+    CompletionDriver::LexEnv
+    CompletionDriver::Methods
 );
