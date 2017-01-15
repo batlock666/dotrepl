@@ -15,3 +15,10 @@ load_plugin qw(
     LexEnv
     ReadLineHistory
 );
+
+$_REPL->fancy_prompt(sub {
+    my $self = shift;
+    sprintf 're.pl:%03d%s> ',
+    $self->lines_read,
+    $self->can('line_depth') ? ':' . $self->line_depth : '';
+});
