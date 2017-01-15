@@ -22,3 +22,10 @@ $_REPL->fancy_prompt(sub {
     $self->lines_read,
     $self->can('line_depth') ? ':' . $self->line_depth : '';
 });
+
+$_REPL->fancy_continuation_prompt(sub {
+    my $self = shift;
+    sprintf 're.pl:%03d%s* ',
+    $self->lines_read,
+    $self->can('line_depth') ? ':' . $self->line_depth : '';
+});
